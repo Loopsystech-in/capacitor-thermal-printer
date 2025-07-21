@@ -613,9 +613,9 @@ public class CapacitorThermalPrinterPlugin extends Plugin implements PrinterObse
         escCmd.append(escCmd.getHeaderCmd());
         escCmd.setChartsetName("UTF-8");
         escCmd.append(data);
-        escCmd.append(escCmd.getLFCRCmd());
-        escCmd.append(escCmd.getLFCRCmd());
-        escCmd.append(escCmd.getLFCRCmd());
+        // escCmd.append(escCmd.getLFCRCmd());
+        // escCmd.append(escCmd.getLFCRCmd());
+        // escCmd.append(escCmd.getLFCRCmd());
         escCmd.append(escCmd.getEndCmd());
         rtPrinter.writeMsgAsync(escCmd.getAppendCmds());
         call.resolve();
